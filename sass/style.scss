@@ -1,0 +1,65 @@
+/*Global*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 2, 2);
+}
+
+.container, .container-game, .rules  {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;    
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container-game {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+h1 {
+    font-size: 48px;
+    color: rgb(241, 246, 241);
+}
+
+.button {
+    border: 5px solid rgb(247, 246, 244);
+    min-width: 160px;
+    min-height: 160px;
+    border-radius: 25%;
+}
+
+.result, .rules {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.835);
+    text-align: center;
+}
+
+.rules {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.835);
+    text-align: center;
+    margin-top: 24px;
+    position: relative;
+}
+
+.rules::before {
+    position: absolute;
+    content: '';
+    top: -12px;
+    left: 50%;
+    width: 400px;
+    height: 10px;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.835);
+}
+
